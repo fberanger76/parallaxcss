@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Unica+One&display=swap');
+
+html {
+    scroll-behavior: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.img-wrapper {
+    background: blue;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    transition: background-color ease-in-out 2s;
+}
+
+header:hover {
+    background: black;
+}
+
+header .logo img {
+    height: auto;
+    width: 100%;
+    display: block;
+    max-width: 160px;
+}
+
+header nav {
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin-right: 20px;
+}
+
+header nav a {
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 200ms ease-in-out;
+    color: white;
+}
+
+header nav a:hover {
+    background: rgb(188, 62, 255);
+    background: linear-gradient(90deg, rgba(188, 62, 255, 1) 0%, rgba(102, 110, 255, 1) 20%, rgba(82, 226, 140, 1) 40%, rgba(249, 255, 123, 1) 60%, rgba(255, 191, 77, 1) 80%, rgba(255, 80, 80, 1) 100%);
+    color: #000;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+}
+
+#intro {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("../img/urban.jpg") center center no-repeat #000 fixed;
+    background-size: cover;
+    color: white;
+}
+
+#intro h1 {
+    font-family: 'Unica One', cursive;
+    font-size: 4em;
+    margin: 0;
+    text-align: center;
+    text-shadow: 5px 5px 20px black;
+}
+
+.bleu {
+    color: #666EFF;
+}
+
+.vert {
+    color: #52E28C;
+}
+
+.jaune {
+    color: #F9FF7B;
+}
+
+.orange {
+    color: #FFBF4D;
+}
+
+.rouge {
+    color: #FF5050;
+}
+
+#intro p {
+    font-size: 20px;
+    text-shadow: 5px 5px 20px black;
+}
+
+#team {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    color: gray;
+}
+
+#team img {
+    max-width: 100%;
+    transition: all 200ms ease-in-out;
+}
+
+#team h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-weight: normal;
+    letter-spacing: 10px;
+    text-align: center;
+    opacity: 0.3;
+}
+
+#team .photographer {
+    width: 300px;
+    min-height: 60vh;
+}
+
+#team figure {
+    margin: 0;
+    background: rgb(188, 62, 255);
+    background: linear-gradient(90deg, violet 0%, #666EFF 20%, #52E28C 40%, #F9FF7B 60%, #FFBF4D 80%, #FF5050 100%);
+}
+
+#team h3 {
+    text-align: center;
+    color: white;
+}
+
+#team p {
+    color: white;
+}
+
+#team a {
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1em;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 200ms ease-in-out;
+    color: white;
+    border: 1px solid gray;
+}
+
+#team .photographer:hover a {
+border : 1px solid white;
+}
+
+#team .photographer:hover img {
+    mix-blend-mode: luminosity;
+    }
+
+    #portraits .img-wrapper {
+        width: 50vw;
+        background: url("../img/portrait.jpg") left top no-repeat white fixed;
+        background-size: contain;
+    }
+
+#portraits a {
+    color: black;
+    border : 1px solid black;
+}
+
+#portraits a:hover {
+    color: white;
+    background-color: black;
+}
+
+#portraits .wrapper {
+    width: 50vw;
+    padding: 100px;
+    background: white;
+    color: black;
+
+}
+
+#outdoor .img-wrapper {
+    width: 50vw;
+    background: url("../img/outdoor.jpg") right center no-repeat white fixed;
+    background-size: contain;
+}
+
+#outdoor .wrapper {
+    width: 50vw;
+    padding: 100px;
+    background-color: black;
+    color: white;
+}
+
+#outdoor a {
+    color: white;
+    border : 1px solid white;
+}
+
+#outdoor a:hover {
+    color: black;
+    background-color: white;
+    border: black 1px solid;
+}
+
+#contact .img-wrapper {
+    width: 50vw;
+    background: url("../img/contact.jpg") left top no-repeat white fixed;
+    background-size: contain;
+
+}
+
+#contact .wrapper {
+    width: 50vw;
+    padding: 100px;
+}
+
+#contact .field {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    resize: none;
+    transition: all 200ms ease-in-out;
+    background: linear-gradient(to top, rgb(184, 181, 181), 1%, white);
+    border: none;
+}
+
+.button {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    margin: 20px auto 0;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 200ms ease-in-out;
+
+}
+
+#contact .button {
+    border : 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+#contact .button:hover {
+    background-color: black;
+    color: white;
+    border: 1px white solid;
+}
+
+#contact label {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(188, 62, 255);
+    background: linear-gradient(90deg, violet 0%, #666EFF 20%, #52E28C 40%, #F9FF7B 60%, #FFBF4D 80%, #FF5050 100%);
+}
